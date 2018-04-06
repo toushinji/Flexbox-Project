@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WAll about the Flex</title>
+  <link rel="stylesheet" href="flexstyle.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <h2 class="title">Flexin with flexbox</h2>
+      <ul id="nav__links">
+        <li><a href="header_text">Home</a></li>
+        <li><a href="#">Horizontal Alignment</a></li>
+        <li><a href="#">Vertial Alignment</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>How to Flex with boxes</h1>
+      <div class="header__text">
+        <h3>(Seinfeld voice) whats the deal with flexbox?</h3>
+        <p>
+          Well Timmy?, err Margaret?..., I'm glad you asked, flexbox as we know or the Flexible Box Module it is a tool used to help us arrange and style our layouts to make them responsive. we are able to do so using vertial and Horizontal properties alongside
+          a few directional and wrapping properties. There are also a few properties that only apply to the child element too which I will also demonstrate below.
+        </p>
+  
+        <h3>How does it even work?</h3>
+        <p>
+          Its quite easy actually, flexbox allows us to use the CSS property "<strong class="important">display</strong>" to control the position, direction and spaceing of child elements inside the parent container. It also allows us to change the order,and
+          alignment of the child elements separately. Today I will attempt to break them down for easy consumption, I will list all sources used to create this medium.
+        </p>
+    </header>
+  
+    <!--   css properties for the parent container section.   -->
+  
+    <div class="justifycontent">
+      <h2 class="justifycontent__chapter">Horizontal Alignment</h2>
+      <p class="justifycontent__chapter--text">
+        Let's begin with the learning the different properties that will be used in the parent container. I meantioned before that with the flexbox css we can manipulate the "position, direction and spaceing of child elements" inside of the parent container.
+        The key that made me understanding how flexboxes worked was remembering that they work the way we learned the coordinate system back in the day.
+      </p>
+      <p>
+        I want to start with the main axis or the x-axis, the horizontal alignment which runs from L-To-R is a good place to start. The <strong>justify-content</strong> focuses on the L-To-R alignment so please keep that in mind.
+      </p>
+  
+      <p>
+        Below is the demo container with 5 child elements I will use to demonstrate the different properties of flexbox. the first thing needed to be able to use these properties is to add <code class="rule">{ display:flex; }</code> in the css of the parent's
+        container.
+      </p>
+  
+      <div class="demoparent">
+        <div class="visualbox">A</div>
+        <div class="visualbox">B</div>
+        <div class="visualbox">C</div>
+        <div class="visualbox">D</div>
+        <div class="visualbox">D</div>
+      </div>
+  
+      <p>Now when we apply <code class="rule">{ display:flex; }</code> we see that the container and the elements changes from being stacked on top of each of each other to being side-by-side
+      </p>
+  
+      <p class="note">Just hover over the container to see the change</p>
+      <div class="demoparent__display--flex">
+        <div class="visualbox">A</div>
+        <div class="visualbox">B</div>
+        <div class="visualbox">C</div>
+        <div class="visualbox">D</div>
+      </div>
+      <p class="note">
+        The class <em class="note">.demoparent</em> is just an example for this demonstation. your container can be named what ever you like.
+  
+      </p>
+  
+      <div class="justifycontent__display">
+        <P class="justifycontent__display--text">
+          Next up is the <code class="rule">{ justify-content:flex-end }</code> property. this make all the child elements inside the parent container align to the right of the container.
+        </p>
+  
+        <div class="justifycontent__display--properties">
+          <div class="demoparent__display--flexend">
+            <div class="visualbox">A</div>
+            <div class="visualbox">B</div>
+            <div class="visualbox">C</div>
+            <div class="visualbox">D</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+  
